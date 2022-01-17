@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mukta:wght@200;300;400;500;600;700;800&family=Pushster&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1f;
+}
+
+li, a, button {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #1d1d1f;
+}
+
+.logo {
+    cursor: pointer;
+    width: 200px;
+    height: 133px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #a90000;
+}
+
+button {
+    padding: 9px 30px;
+    background-color: rgb(169, 0, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease os;
+}
+
+button:hover {
+    background-color: rgba(169, 0, 0, 0.8);
+}
+
+.logo_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+
+}
+
+.description {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    transition: all 0.35s linear;
+}
+.full_audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+}
+
+.player {
+    width: 640px;
+    background-color: var(--bg);
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
+    grid-gap: 16px;
+    padding: 8px 24px;
+    position: relative;
+    border-radius: 64px;
+}
+
+.control,#current {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 16px;
+}
+
+#playbtn {
+    font-size: 24px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    cursor: pointer;
+}
+
+#playbtn:hover {
+    
+    -webkit-text-fill-color: white;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+}
+
+#current {
+    text-align: right;
+}
+
+.bar {
+    --space: -4px;
+    background-color: white;
+    overflow: hidden;
+    left: var(--space);
+    right: var(--space);
+    top: var(--space);
+    bottom: var(--space);
+    position: absolute;
+    border-radius: 64px;
+    z-index: -2;
+}
+
+#progress {
+    display: blcok;
+    width: var(--progress,0%);
+    background-color: white;
+    transition: all 1s linear;
+    height: 100%;
+}
+
+.instruction {
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: left;
+    cursor: wait;
+    margin-left: 0.5%;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo_img{
+        padding: 0px 60px;
+    }
+
+    .text__d {
+        
+        justify-content: center;
+        text-align: center;
+        padding: 10px 30px;
+    }
+
+    .logo_img img {
+        width: 110%;
+        height: auto;
+    }
+}
+
